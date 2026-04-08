@@ -3,33 +3,42 @@
   <head>
     <title>Portfolio number 1</title>
     <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
-    <h1>Portfolio number 1</h1>
+    <main>
+      <h1>Portfolio number 1</h1> 
 
-    <img src="image2.png" width="500" height="300" alt="Image of a dog" title="Image of a dog" />
-    <p>This is image of a dog </p>  
+      <img src="image2.png" width="500" height="300" alt="Image of a dog" title="Image of a dog" />
+      <p>This is image of a dog </p>  
 
-    <figure>
-      <video width="320" height="240" controls>
-        <source src="novideo" type="video/webm">
-        Your browser does not support the video tag.
-      </video>
-      <figcaption>Video without source</figcaption>
-    </figure>
+      <section class="section">
+        <figure>
+          <video width="500" height="300" controls>
+            <source src="novideo" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>Video without source</figcaption>
+        </figure>
+      </section>
 
-    <figure>
-      <iframe width="320" height="240"
-        src="https://www.youtube.com/embed/Aq5WXmQQooo"
-        title="YouTube video"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
-      <figcaption>Rickroll video</figcaption>
-    </figure>
+      <section class="section">
+        <figure>
+          <iframe width="500" height="300"
+            src="https://www.youtube.com/embed/Aq5WXmQQooo"
+            title="YouTube video"
+            frameborder="0"
+            allow="accelerometer autoplay clipboard-write encrypted-media gyroscope web-share"
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+          </iframe>
+          <!-- allow the use of encrypted media extensions to protect the video, grant access to the device’s motion and orientation sensors, and allow sharing the iframe content through the device's native share dialogs.-->
+          <figcaption>Rickroll video</figcaption>
+        </figure>
+      </section>
 
-    <button>Buy Now</button> 
-
+      <button>Buy Now</button> 
+    </main>
   </body>
 </html>
