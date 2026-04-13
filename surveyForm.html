@@ -11,114 +11,40 @@
   </head>
 
   <body>
-    <main>
-      <header>
-        <nav>
-          <a href ="index.html">Home</a>
-          <a href ="portfolio.html">Portfolio</a>
-          <a href ="surveyForm.html">Survey Form</a>
-        </nav>
-      </header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a survey form a freeCodeCamp Excercise</p>
 
-      <h1>survey Form</h1> 
-      <div>
-        <blockquote cite="nowhere.com">
-          <p>The best modeler on the planet - said noone. </p>
-        </blockquote>
-        <p>-nobody</p>
-      </div>
+    <form id="survey-form" method="GET" action="nowhere.com">
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" type="text" placeholder="Jon Doe" required>
+      
+      <label id="email-label" for="email">E-mail:</label>
+      <input id="email" type="email" placeholder="fake@email.com" required>
+      
+      <label id="number-label" for="number">Age:</label>
+      <input id="number" type="number" min="0" max="100" placeholder="99">
+      
+      <select id="dropdown">
+        <option>Option1</option>
+        <option selected>Option2</option>
+      </select>
 
-      <form method="POST" action="nowhere.org">
-        <fieldset>
-          <legend>Personal Information</legend>
-          <label for="full-name">Name (required):</label>
-          <input type="text" id="full-name" name="name" placeholder="e.g., John Doe" required size="20">
+      <label for="yesbtn" name="radbtn">Yes</label>
+      <input id="yesbtn" type="radio" value="yes" name="radbtn">
+      <label for"nobtn" name="radbtn">No</label>
+      <input id="notbn" type="radio" value="no" name="radbtn">
 
-          <label for="email">Email address (required):</label>
-          <input
-            placeholder="example@email.com"
-            required
-            id="email"
-            type="email"
-            name="email"
-            size="20"
-          />
-          <label for="age">Age (optional):</label>
-          <input type="number" name="age" id="age" min="3" max="100" />
-        </fieldset>
+      <label for="option1" name="option1" >Option1</label>
+      <input id="option1" type="checkbox" value="option1">
+      <label for"option2" name="option2">Option2</label>
+      <input id="option2" type="checkbox" value="option2">
+      <label for"option3" name="option3">Option3</label>
+      <input id="option3" type="checkbox" value="option3">
 
-        <fieldset>
-          <legend>Was this your first time at our hotel?</legend>
-          <input id="yes-option" type="radio" name="hotel-stay" value="yes" />
-          <label for="yes-option">Yes</label>
-          <input id="no-option" type="radio" name="hotel-stay" value="no" />
-          <label for="no-option">No</label>
-        </fieldset>
+      <textarea></textarea>
 
-        <fieldset>
-          <legend>
-            Why did you choose to stay at our hotel? (Check all that apply)
-          </legend>
+      <button id="submit" type="submit">Submit</button>
+    </form>
 
-          <input type="checkbox" id="ads" name="choice" value="ads" />
-          <label for="ads">Social Media Ads</label>
-
-          <input
-            type="checkbox"
-            id="recommendation"
-            name="choice"
-            value="recommendation"
-          />
-          <label for="recommendation">Personal Recommendation</label>
-          
-          <input type="checkbox" id="location" name="choice" value="location" />
-          <label for="location">Location</label>
-
-          <input
-            checked
-            type="checkbox"
-            id="reputation"
-            name="choice"
-            value="reputation"
-          />
-          <label for="reputation">Reputation</label>
-          
-          <input type="checkbox" id="price" name="choice" value="price" />
-          <label for="price">Price</label>
-        </fieldset>
-
-        <fieldset>
-          <legend>Ratings</legend>
-
-          <label for="service">How was the service?</label>
-
-          <select name="service" id="service">
-            <option value="poor">Poor</option>
-            <option value="satisfactory">Satisfactory</option>
-            <option value="good">Good</option>
-            <option value="very-good">Very Good</option>
-            <option selected value="excellent">Excellent</option>
-          </select>
-
-          <label for="food">How was the food?</label>
-
-          <select name="food" id="food">
-            <option value="poor">Poor</option>
-            <option value="satisfactory">Satisfactory</option>
-            <option value="good">Good</option>
-            <option value="very-good">Very Good</option>
-            <option selected value="excellent">Excellent</option>
-          </select>
-        </fieldset>
-
-        <label for="comments">Other Comments?</label>
-        <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
-
-        <button type="submit">Submit</button>        
-      </form>
-    </main>
-    <footer>
-      <p>&copy; 2023 My Portfolio. No rights reserved.</p>
-    </footer>
   </body>
 </html>
