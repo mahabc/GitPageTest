@@ -23,33 +23,48 @@
     </header>
 
     <form id="survey-form" method="GET" action="nowhere.com">
-      <label id="name-label" for="name">Name:</label>
-      <input id="name" type="text" placeholder="Jon Doe" required>
-      
-      <label id="email-label" for="email">E-mail:</label>
-      <input id="email" type="email" placeholder="fake@email.com" required>
-      
-      <label id="number-label" for="number">Age:</label>
-      <input id="number" type="number" min="0" max="100" placeholder="99">
-      
-      <select id="dropdown">
-        <option>Option1</option>
-        <option selected>Option2</option>
-      </select>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" placeholder="Jon Doe" required>
 
-      <label for="yesbtn" name="radbtn">Yes</label>
-      <input id="yesbtn" type="radio" value="yes" name="radbtn">
-      <label for"nobtn" name="radbtn">No</label>
-      <input id="notbn" type="radio" value="no" name="radbtn">
+        <label id="email-label" for="email">E-mail:</label>
+        <input id="email" type="email" placeholder="fake@email.com" required>
 
-      <label for="option1" name="option1" >Option1</label>
-      <input id="option1" type="checkbox" value="option1">
-      <label for"option2" name="option2">Option2</label>
-      <input id="option2" type="checkbox" value="option2">
-      <label for"option3" name="option3">Option3</label>
-      <input id="option3" type="checkbox" value="option3">
+        <label id="number-label" for="number">Age:</label>
+        <input id="number" type="number" min="0" max="100" placeholder="99">
+      </fieldset>
 
-      <textarea></textarea>
+      <fieldset>
+        <legend>Dropdown</legend>
+        <select id="dropdown">
+          <option>Option1</option>
+          <option selected>Option2</option>
+        </select>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Radio Buttons</legend>
+        <label for="yesbtn" name="radbtn">Yes</label>
+        <input id="yesbtn" type="radio" value="yes" name="radbtn">
+        <label for"nobtn" name="radbtn">No</label>
+        <input id="notbn" type="radio" value="no" name="radbtn">
+      </fieldset>
+
+      <fieldset>
+        <legend>Checkboxes</legend>
+        <label for="option1" name="option1" >Option1</label>
+        <input id="option1" type="checkbox" value="option1">
+        <label for"option2" name="option2">Option2</label>
+        <input id="option2" type="checkbox" value="option2">
+        <label for"option3" name="option3">Option3</label>
+        <input id="option3" type="checkbox" value="option3">
+      </fieldset>
+
+      <fieldset>
+        <legend>Texarea - write your opinion</legend>
+        <textarea></textarea>
+      </fieldset>
 
       <button id="submit" type="submit">Submit</button>
     </form>
