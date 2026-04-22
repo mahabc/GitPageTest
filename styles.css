@@ -1,6 +1,59 @@
 body{
-    background-color: burlywood;
-    padding:20px;
-    font-family: Arial;
-    
+  text-align:center;
+  backrgound-color:burlywood;
+}
+
+ul{
+  list-style:none;
+  padding:inherit;
+  margin:inherit;
+  outline: 2px solid black;
+}
+
+li{
+  padding:10px;
+  margin:inherit;
+  background-color:burlywood;
+  outline: 2px solid black;
+  outline-offset: 0px; /* optional spacing */
+
+}
+
+.todo-list{
+  background-color:beige;
+}
+
+.panel{
+  background-color:beige;
+  padding:20px;
+  margin:20px;
+}
+
+a{
+ text-decoration:none; 
+}
+
+a:link{
+  text-decoration:none;
+  color:blue;
+  font-size:15px;
+}
+
+a:visited{
+color:purple;
+text-decoration:line-through;
+}
+
+a:hover{
+font-size:18px;
+color:red;
+text-decoration:underline;
+}
+
+a:focus{
+  outline:red;
+}
+
+a:active{
+  color:pink;
 }
