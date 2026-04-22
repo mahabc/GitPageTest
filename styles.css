@@ -8,6 +8,11 @@ body{
   backrgound-color:burlywood;
 }
 
+table{
+  text-align:center;
+  backrgound-color:burlywood;
+}
+
 ul{
   list-style:none;
   padding:inherit;
