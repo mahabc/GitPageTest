@@ -1,71 +1,61 @@
 <!DOCTYPE html>
-<html lang = "en">
-  <head>
-    <title>Portfolio number 1</title>
-    <link href="./styles.css" rel="stylesheet"/>
-    <meta charset = "UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Discover nothing, its just where you add SEO crap"/>
-  </head>
-
-  <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">This is a survey form a freeCodeCamp Excercise</p>
-
-    <header>
-      <nav>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="card-styles.css" rel="stylesheet">
+    <link href="stylescss" rel="stylesheet">
+    <title>Blog Post Card</title>
+</head>
+<body>
+  <header class="main-header">
+      <nav class="main-nav">
         <a href ="./index.html">Home</a>
         <a href ="./menu.html">Menu</a>
         <a href ="./surveyForm.html">Survey Form</a>
+        <a href ="./card.html">Survey Form</a>
       </nav>
-    </header>
+  </header>
+  <form id="survey-form" method="GET" action="nowhere.com">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" type="text" placeholder="Jon Doe" required>
+      <label id="email-label" for="email">E-mail:</label>
+      <input id="email" type="email" placeholder="fake@email.com" required>
+      <label id="number-label" for="number">Age:</label>
+      <input id="number" type="number" min="0" max="100" placeholder="99">
+    </fieldset>
+    <fieldset>
+      <legend>Dropdown</legend>
+      <select id="dropdown">
+        <option>Option1</option>
+        <option selected>Option2</option>
+      </select>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Radio Buttons</legend>
+      <label for="yesbtn" name="radbtn">Yes</label>
+      <input id="yesbtn" type="radio" value="yes" name="radbtn">
+      <label for"nobtn" name="radbtn">No</label>
+      <input id="notbn" type="radio" value="no" name="radbtn">
+    </fieldset>
+    <fieldset>
+      <legend>Checkboxes</legend>
+      <label for="option1" name="option1" >Option1</label>
+      <input id="option1" type="checkbox" value="option1">
+      <label for"option2" name="option2">Option2</label>
+      <input id="option2" type="checkbox" value="option2">
+      <label for"option3" name="option3">Option3</label>
+      <input id="option3" type="checkbox" value="option3">
+    </fieldset>
+    <fieldset>
+      <legend>Texarea - write your opinion</legend>
+      <textarea></textarea>
+    </fieldset>
+    <button id="submit" type="submit">Submit</button>
+  </form>
 
-    <form id="survey-form" method="GET" action="nowhere.com">
-      <fieldset>
-        <legend>Personal Information</legend>
-        <label id="name-label" for="name">Name:</label>
-        <input id="name" type="text" placeholder="Jon Doe" required>
-
-        <label id="email-label" for="email">E-mail:</label>
-        <input id="email" type="email" placeholder="fake@email.com" required>
-
-        <label id="number-label" for="number">Age:</label>
-        <input id="number" type="number" min="0" max="100" placeholder="99">
-      </fieldset>
-
-      <fieldset>
-        <legend>Dropdown</legend>
-        <select id="dropdown">
-          <option>Option1</option>
-          <option selected>Option2</option>
-        </select>
-      </fieldset>
-      
-      <fieldset>
-        <legend>Radio Buttons</legend>
-        <label for="yesbtn" name="radbtn">Yes</label>
-        <input id="yesbtn" type="radio" value="yes" name="radbtn">
-        <label for"nobtn" name="radbtn">No</label>
-        <input id="notbn" type="radio" value="no" name="radbtn">
-      </fieldset>
-
-      <fieldset>
-        <legend>Checkboxes</legend>
-        <label for="option1" name="option1" >Option1</label>
-        <input id="option1" type="checkbox" value="option1">
-        <label for"option2" name="option2">Option2</label>
-        <input id="option2" type="checkbox" value="option2">
-        <label for"option3" name="option3">Option3</label>
-        <input id="option3" type="checkbox" value="option3">
-      </fieldset>
-
-      <fieldset>
-        <legend>Texarea - write your opinion</legend>
-        <textarea></textarea>
-      </fieldset>
-
-      <button id="submit" type="submit">Submit</button>
-    </form>
-
-  </body>
+</body>
 </html>
