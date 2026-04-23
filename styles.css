@@ -29,6 +29,11 @@ li{
 
 }
 
+.linear-gradient{
+  background: linear-gradient(to right, red, yellow);
+  height: 40vh;
+}
+
 .todo-list{
   background-color:beige;
 }
@@ -66,4 +71,78 @@ a:focus{
 
 a:active{
   color:pink;
+}
+
+.main-header{
+  background:black;
+  padding:20px;
+  color:white;
+  font-size: 30px;
+}
+
+.main-nav{
+    display:flex;
+    justify-content:space-around;
+}
+
+.main-nav a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    padding:10px;
+}
+
+a:hover{
+    color:pink;
+    text-decoration:underline;
+    padding:15px;
+}
+
+body{
+  background:blue;
+  background:linear-gradient(to bottom, green, yellow);
+}
+
+.blog-post-card{
+  background:white;
+  border-radius: 5vh;
+  width:80%;
+  text-align:center;
+  height:80%;
+  margin-left:10%;
+  margin-right:10%;
+}
+
+.post-img{
+  width:100%;
+  border-bottom:5px solid black;
+  border-radius:5vh;
+}
+
+.post-content{
+  padding:20px;
+}
+
+.post-title{
+  color:navy;
+  margin:10px;
+}
+
+.post-excerpt{
+  color:navy;
+  margin:10px;
+}
+
+.read-more{
+  color:navy;
+  background:grey;
+  margin:10px;
+  padding:5%;
+  border-radius:2vh;
+  display:inline-block;
+}
+
+.read-more:hover{
+  background:pink;
+  padding:7%;
 }
