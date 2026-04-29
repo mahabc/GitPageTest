@@ -114,11 +114,6 @@ a:hover{
     padding:15px;
 }
 
-body{
-  background:blue;
-  background:linear-gradient(to bottom, green, yellow);
-}
-
 .blog-post-card{
   background:white;
   border-radius: 5vh;
