@@ -5,9 +5,11 @@
 
 .color-selector{
   min-width:300px;
-  min-height:600px;
+  min-height:300px;
   padding: 8px 12px;
   margin: 8px auto;
+  border-radius: 6px;
+  border: 1px solid #000;
 }
 
 .color-selector input{
