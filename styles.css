@@ -3,6 +3,22 @@
   background-color:burlywood;
 }
 
+.color-selector input{
+  padding: 8px 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.color-selector input[type="color"] {
+  width: 60px;
+  height: 40px;
+  padding: 0;
+  border: 2px solid #555;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 body{
   text-align:center;
   background-color:burlywood;

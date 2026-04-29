@@ -16,172 +16,153 @@
         </nav>
     </header>
 
-      <h1>Portfolio number 1</h1> 
-      <div>
-        <blockquote cite="nowhere.com">
-          <p>The best modeler on the planet - said noone. </p>
-        </blockquote>
-        <p>-nobody</p>
-      </div>
-
-      <table>
-      <caption>
-        Calculus Final Exam Grades
-      </caption>
-
-      <thead>     
-        <tr>
-          <th>Last Name</th>
-          <th>First Name</th>
-          <th>Grade</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>Davis</td>
-          <td>Alex</td>
-          <td>54</td>
-        </tr>
-
-        <tr>
-          <td>Doe</td>
-          <td>Samantha</td>
-          <td>92</td>
-        </tr>
-        
-      </tbody>
-
-      <tfoot>
-        <tr>
-          <td colspan="2">Average Grade</td>
-          <td>78.8</td>
-        </tr>
-      </tfoot>
-    </table>
-
-      <form method="POST" action="nowhere.org">
-        <fieldset>
-          <legend>Personal Information</legend>
-          <label for="full-name">Name (required):</label>
-          <input type="text" id="full-name" name="name" placeholder="e.g., John Doe" required size="20">
-
-          <label for="email">Email address (required):</label>
-          <input
-            placeholder="example@email.com"
-            required
-            id="email"
-            type="email"
-            name="email"
-            size="20"
-          />
-          <label for="age">Age (optional):</label>
-          <input type="number" name="age" id="age" min="3" max="100" />
-        </fieldset>
-
-        <fieldset>
-          <legend>Was this your first time at our hotel?</legend>
-          <input id="yes-option" type="radio" name="hotel-stay" value="yes" />
-          <label for="yes-option">Yes</label>
-          <input id="no-option" type="radio" name="hotel-stay" value="no" />
-          <label for="no-option">No</label>
-        </fieldset>
-
-        <fieldset>
-          <legend>
-            Why did you choose to stay at our hotel? (Check all that apply)
-          </legend>
-
-          <input type="checkbox" id="ads" name="choice" value="ads" />
-          <label for="ads">Social Media Ads</label>
-
-          <input
-            type="checkbox"
-            id="recommendation"
-            name="choice"
-            value="recommendation"
-          />
-          <label for="recommendation">Personal Recommendation</label>
-          
-          <input type="checkbox" id="location" name="choice" value="location" />
-          <label for="location">Location</label>
-
-          <input
-            checked
-            type="checkbox"
-            id="reputation"
-            name="choice"
-            value="reputation"
-          />
-          <label for="reputation">Reputation</label>
-          
-          <input type="checkbox" id="price" name="choice" value="price" />
-          <label for="price">Price</label>
-        </fieldset>
-
-        <fieldset>
-          <legend>Ratings</legend>
-
-          <label for="service">How was the service?</label>
-
-          <select name="service" id="service">
-            <option value="poor">Poor</option>
-            <option value="satisfactory">Satisfactory</option>
-            <option value="good">Good</option>
-            <option value="very-good">Very Good</option>
-            <option selected value="excellent">Excellent</option>
-          </select>
-
-          <label for="food">How was the food?</label>
-
-          <select name="food" id="food">
-            <option value="poor">Poor</option>
-            <option value="satisfactory">Satisfactory</option>
-            <option value="good">Good</option>
-            <option value="very-good">Very Good</option>
-            <option selected value="excellent">Excellent</option>
-          </select>
-        </fieldset>
-
-        <label for="comments">Other Comments?</label>
-        <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
-
-        <button type="submit">Submit</button>        
+    <h1>Portfolio number 1</h1> 
+    <div class="color-selector">
+      <form>
+        <label for="favorite-color">Pick your favorite color:</label>
+        <input type="color" id="favorite-color" name="favorite-color">
       </form>
-
-      <p>Welcome to my portfolio! Here you can find some of my work and projects.</p>
-
-      <img src="./image1.png" width="500" height="300" alt="Image of a dog" title="Image of a dog" />
-      <p>BIG FAT DOG </p>  
-
-      <section class="section">
-        <figure>
-          <video width="500" height="300" controls>
-            <source src="novideo" type="video/webm">
-            Your browser does not support the video tag.
-          </video>
-          <figcaption>Video without source</figcaption>
-        </figure>
-      </section>
-
-      <section class="section">
-        <figure>
-          <iframe width="500" height="300"
-            src="https://www.youtube.com/embed/Aq5WXmQQooo"
-            title="YouTube video"
-            frameborder="0"
-            allow="accelerometer autoplay clipboard-write encrypted-media gyroscope web-share"
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-          </iframe>
-          <!-- allow the use of encrypted media extensions to protect the video, grant access to the device’s motion and orientation sensors, and allow sharing the iframe content through the device's native share dialogs.-->
-          <figcaption>Rickroll video</figcaption>
-        </figure>
-
-        <a href="https://www.youtube.com" target="_blank">Visit YouTube</a>
-      </section>
-
-      <button>Buy Now</button> 
+    </div>
+    <div>
+      <blockquote cite="nowhere.com">
+        <p>The best modeler on the planet - said noone. </p>
+      </blockquote>
+      <p>-nobody</p>
+    </div>
+    <table>
+    <caption>
+      Calculus Final Exam Grades
+    </caption>
+    <thead>     
+      <tr>
+        <th>Last Name</th>
+        <th>First Name</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Davis</td>
+        <td>Alex</td>
+        <td>54</td>
+      </tr>
+      <tr>
+        <td>Doe</td>
+        <td>Samantha</td>
+        <td>92</td>
+      </tr>
+      
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Average Grade</td>
+        <td>78.8</td>
+      </tr>
+    </tfoot>
+    <table>
+    <form method="POST" action="nowhere.org">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="full-name">Name (required):</label>
+        <input type="text" id="full-name" name="name" placeholder="e.g., John Doe" required size="20">
+        <label for="email">Email address (required):</label>
+        <input
+          placeholder="example@email.com"
+          required
+          id="email"
+          type="email"
+          name="email"
+          size="20"
+        />
+        <label for="age">Age (optional):</label>
+        <input type="number" name="age" id="age" min="3" max="100" />
+      </fieldset>
+      <fieldset>
+        <legend>Was this your first time at our hotel?</legend>
+        <input id="yes-option" type="radio" name="hotel-stay" value="yes" />
+        <label for="yes-option">Yes</label>
+        <input id="no-option" type="radio" name="hotel-stay" value="no" />
+        <label for="no-option">No</label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Why did you choose to stay at our hotel? (Check all that apply)
+        </legend>
+        <input type="checkbox" id="ads" name="choice" value="ads" />
+        <label for="ads">Social Media Ads</label>
+        <input
+          type="checkbox"
+          id="recommendation"
+          name="choice"
+          value="recommendation"
+        />
+        <label for="recommendation">Personal Recommendation</label>
+        
+        <input type="checkbox" id="location" name="choice" value="location" />
+        <label for="location">Location</label>
+        <input
+          checked
+          type="checkbox"
+          id="reputation"
+          name="choice"
+          value="reputation"
+        />
+        <label for="reputation">Reputation</label>
+        
+        <input type="checkbox" id="price" name="choice" value="price" />
+        <label for="price">Price</label>
+      </fieldset>
+      <fieldset>
+        <legend>Ratings</legend>
+        <label for="service">How was the service?</label>
+        <select name="service" id="service">
+          <option value="poor">Poor</option>
+          <option value="satisfactory">Satisfactory</option>
+          <option value="good">Good</option>
+          <option value="very-good">Very Good</option>
+          <option selected value="excellent">Excellent</option>
+        </select>
+        <label for="food">How was the food?</label>
+        <select name="food" id="food">
+          <option value="poor">Poor</option>
+          <option value="satisfactory">Satisfactory</option>
+          <option value="good">Good</option>
+          <option value="very-good">Very Good</option>
+          <option selected value="excellent">Excellent</option>
+        </select>
+      </fieldset>
+      <label for="comments">Other Comments?</label>
+      <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+      <button type="submit">Submit</button>        
+    </form>
+    <p>Welcome to my portfolio! Here you can find some of my work and projects.</p>
+    <img src="./image1.png" width="500" height="300" alt="Image of a dog" title="Image of a dog" />
+    <p>BIG FAT DOG </p>  
+    <section class="section">
+      <figure>
+        <video width="500" height="300" controls>
+          <source src="novideo" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Video without source</figcaption>
+      </figure>
+    </section>
+    <section class="section">
+      <figure>
+        <iframe width="500" height="300"
+          src="https://www.youtube.com/embed/Aq5WXmQQooo"
+          title="YouTube video"
+          frameborder="0"
+          allow="accelerometer autoplay clipboard-write encrypted-media gyroscope web-share"
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+        <!-- allow the use of encrypted media extensions to protect the video, grant access to the device’s motion and orientation sensors, and allow sharing the iframe content through the device's native share dialogs.-->
+        <figcaption>Rickroll video</figcaption>
+      </figure>
+      <a href="https://www.youtube.com" target="_blank">Visit YouTube</a>
+    </section>
+    <button>Buy Now</button> 
     </main>
     <script>
       const button = document.querySelector('button');
