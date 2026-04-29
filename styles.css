@@ -8,6 +8,8 @@
   margin: 8px 0;
   border-radius: 6px;
   border: 1px solid #ccc;
+  min-width:300px;
+  min-height:600px;
 }
 
 .color-selector input[type="color"] {
