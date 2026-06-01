@@ -71,16 +71,18 @@ body{
 
 .catalog{
     display:grid;
-    width:80%;
-    margin:0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(51vw, 1fr));
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
     gap:2rem;
-    padding:2rem;
+    padding:5%;
 }
 
 .card-link{
+    margin:0 auto;
     border-radius: 10px;
-    min-height:20vh;
+    max-width:40vw;
+    min-width:250px;
     color:inherit;
 }
 
