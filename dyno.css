@@ -62,19 +62,53 @@ body{
     color:var(--font-light);
 }
 
+/* Catalog Styles */
+
 .catalog{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap:1rem;
-    padding:1rem;
+    gap:2rem;
+    padding:2rem;
+}
+
+.card-link{
+    border-radius: 10px;
+    color:inherit;
+}
+
+.card-link:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.card-link:active{
+    border: 2px solid var(--highlight);
 }
 
 .card{
     background:var(--intermediate);
     border-radius: 10px;
-    padding:1rem;
-    margin:1rem;
+    padding:2rem;
+    margin:0;
     display:flex;
     flex-direction: column;
     align-items: center;
 }
+
+.card-img{
+    width:90%;
+    height:auto;
+    border-radius: 10px;
+}
+
+/* Catalog Styles */
+/* Article Styles */
+
+.workflows-article{
+    max-width:800px;
+    margin:2rem auto;
+    padding:2rem;
+    background:var(--intermediate);
+    border-radius: 10px;
+}
+
+/* Article Styles */
