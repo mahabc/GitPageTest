@@ -20,15 +20,13 @@
 body{
     background-color:var(--background-dark);
     color:var(--font-light);
-    width:100vw;
-    height:100%;
 }
 
 .hidden{
     display:none;
 }
 
-.nav-btn{
+/*.nav-btn{
     position:absolute;
     top:2rem;
     right:1rem;
@@ -52,11 +50,12 @@ body{
     align-items: center;
     background:var(--highlight);
     border-radius: 10%;
-}
+}*/
 
 #main-nav{
     display:flex;
     justify-content: center;
+    align-items: center;
     width:100%;
     background:var(--intermediate);
 }
@@ -65,8 +64,23 @@ body{
     padding:1rem;
     margin:1rem;
     color:var(--font-light);
+    border:1px solid var(--intermediate);
+    border-radius: 50%;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 10px var(--highlight);
 }
 
+#home{
+    font-size:3rem;
+    line-height: 0.6rem;
+}
+
+#back{
+    font-size:2rem;
+    line-height: 1.2rem;
+}
 /* Catalog Styles */
 
 .catalog{
@@ -75,14 +89,13 @@ body{
     justify-content: center;
     align-items: center;
     gap:2rem;
-    padding:5%;
+    padding:2rem;
 }
 
 .card-link{
     margin:0 auto;
-    border-radius: 10px;
-    max-width:40vw;
-    min-width:250px;
+    border-radius: 10px;    
+    width:80vw;
     color:inherit;
 }
 
@@ -97,20 +110,19 @@ body{
 }
 
 .card{
-    height:100%;
+    height:content;
     background:var(--intermediate);
     border-radius: 10px;
-    padding:2rem;
-    margin:0;
+    padding:1rem;
     display:flex;
     gap:1rem;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 }
 
 .card-img{
-    width:90%;
-    height:auto;
+    height:50%;
+    width:auto;
     border-radius: 10px;
 }
 
@@ -206,6 +218,23 @@ body{
 }
 
 /* main-menu */
+/* media */
+
+@media screen and (min-width: 1024px) {
+    .catalog{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card-link{
+        height:70vh;
+        width:30vw;
+    }
+    .card{
+    height:inherit;
+    max-width:30vw;
+    }
+}
+
+/* media */
 /* lightbox */
 #lightbox { display: none; position: fixed; inset: 0; z-index: 9999; background: var(--background-light); justify-content: center; align-items: center; } 
 #lightbox-img { max-width: 90vw; max-height: 90vh; } 
