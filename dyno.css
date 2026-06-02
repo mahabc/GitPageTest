@@ -232,8 +232,15 @@ body{
     height:inherit;
     max-width:30vw;
     }
+    .main-menu{
+    flex-direction: row;
+    margin-top:7rem;
+    }
+    .main-menu h1{
+    position:absolute;
+    top:10%;
+    }
 }
-
 /* media */
 /* lightbox */
 #lightbox { display: none; position: fixed; inset: 0; z-index: 9999; background: var(--background-light); justify-content: center; align-items: center; } 
