@@ -9,14 +9,17 @@
     --circle-size:60vw;
     --font-big:2rem;
     --font-medium:1.5rem;
+    --font-small:0.5rem;
     --padding-big:7vw;
+    --padding-medium:3vw;
     --padding-small:5vw;
+    --margin-small:1vw;
     --nav-btn-size:6vw;
     --shadow-small:0 0 30px var(--highlight);
     --shadow-medium:0 0 40px var(--highlight);
     --shadow-big:0 0 50px var(--highlight);
-    --card-height:content;
-    --card-width:90vw;
+    --card-height:auto;
+    --card-width:45vw;
     --card-border-radius:5vw;
     --article-size:90vw;
     --sphere-size:50vw;
@@ -81,7 +84,6 @@ body{
     justify-content: center;
     align-items: center;
     width:100%;
-    background:var(--intermediate);
 }
 
 #main-nav a{
@@ -124,48 +126,63 @@ body{
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    gap:var(--padding-small);
+    gap:var(--margin-small);
     padding:var(--padding-big);
 }
 
 .card-link{
-    margin:0 auto;
+    margin:0;
     border-radius: var(--card-border-radius);    
     width:var(--card-width);
     height:var(--card-height);
     color:inherit;
+    width:90vw;
 }
 
 .card-link:hover{
-    transform: scale(1.05);
     border: 1px solid var(--intermediate);
     box-shadow: var(--shadow-big);
 }
-.card-link:active{
-    border: 1px solid var(--highlight);
-    box-shadow: var(--shadow-small);
-}
-
 
 .card{
-    height:content;
     background:var(--intermediate);
     border-radius: var(--card-border-radius);
+    gap:var(--margin-small);
     padding:var(--padding-big);
+    width:100%;
+    height:100%;
+}
+.card-img-container{  
+    height:100%;
+    width:auto;
     display:flex;
-    gap:var(--padding-big);
-    flex-direction: column;
-    align-items: stretch;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content{
+    width:100%;
+    display:flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+    gap:var(--padding-small);
 }
 
 .card-img{
-    height:50%;
-    width:auto;
+    height:auto;
+    width:100%;
     border-radius: var(--card-border-radius);
 }
 
 .card h2{
-    font-size:var(--font-medium);
+    font-size:var(--font-small);
+    text-align: left;
+
+}
+
+.card p{
+    font-size:var(--font-small);
     text-align: left;
 }
 /* Catalog Styles */
@@ -190,19 +207,19 @@ body{
 
 .btn{
     width:fit-content;
-    margin-top:var(--padding-big);
+    margin-top:var(--padding-small);
     padding:0.5vw 1vw;
     background:var(--highlight);
     color:var(--font-light);
+    font-size:var(--font-small);
     border:none;
     border-radius: 5vw;
     cursor: pointer;
 }
 
 .btn:hover{
-    transform: scale(1.05);
-    border: 1px solid var(--intermediate);
-    box-shadow: 0 0 5vw var(--highlight);
+    border: 1px solid var(--hightlight);
+    box-shadow: 0 0 1vw var(--highlight);
 }
 
 .btn:active{
@@ -219,7 +236,7 @@ body{
     flex-direction: column;
     width:80%;
     margin:0 auto;
-    gap:var(--padding-small);
+    gap:var(--padding-medium);
     padding:var(--padding-small);
 }
 
@@ -261,15 +278,28 @@ body{
 
 @media screen and (min-width: 1024px) {
     
+    
+
     .catalog{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+
     }
     
     .card{
-    height:inherit;
+    font-size:var(--font-small);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:var(--padding-big);
+    width:100%;
     }
+
     .main-menu{
     flex-direction: row;
+    }
+
+    .card-link{
+        max-width:var(--card-width);
+        max-height:var(--card-height);
     }
     
     :root{
@@ -283,18 +313,19 @@ body{
     --font-big:2rem;
     --font-medium:1.5rem;
     --padding-big:3vw;
-    --padding-small:2vw;
+    --padding-medium:2vw;
+    --padding-small:0.5vw;
     --nav-btn-size:6vw;
     --shadow-small:0 0 10px var(--highlight);
     --shadow-medium:0 0 20px var(--highlight);
     --shadow-big:0 0 30px var(--highlight);
-    --card-height:40vw;
-    --card-width:30vw;
-    --card-border-radius:3vw;
+    --card-height:28vw;
+    --card-width:45vw;
+    --card-border-radius:2vw;
     --article-size:60vw;
     --sphere-size:20vw;
     --title-offset:15vw;
-    font-size:16px;
+    --font-size:16px;
     }   
     #main-head{
     font-size:var(--font-big);
