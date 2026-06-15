@@ -1,5 +1,5 @@
 :root{
-    font-size:32px;
+    font-size:16px;
     --background-dark:#1e1e1e;
     --background-light:#e2e2e2;
     --intermediate:#333333;
@@ -8,18 +8,19 @@
     --highlight:orangered;
     --circle-size:60vw;
     --font-big:2rem;
-    --font-medium:1.5rem;
-    --font-small:0.5rem;
+    --font-medium-big:1.5rem;
+    --font-medium:1rem;
+    --font-small:0.8rem;
     --padding-big:7vw;
     --padding-medium:3vw;
-    --padding-small:5vw;
+    --padding-small:1vw;
     --margin-small:1vw;
     --nav-btn-size:6vw;
     --shadow-small:0 0 30px var(--highlight);
     --shadow-medium:0 0 40px var(--highlight);
     --shadow-big:0 0 50px var(--highlight);
     --card-height:auto;
-    --card-width:45vw;
+    --card-width:90vw;
     --card-border-radius:5vw;
     --article-size:90vw;
     --sphere-size:50vw;
@@ -113,10 +114,9 @@ body{
     font-size:var(--font-big);  
 }
 
-#main-nav a:active{
-    border: 1px solid var(--highlight);
-    transform: scale(1.05);
-    box-shadow: var(--shadow-big);
+#main-nav a:hover{
+    border: 1px solid var(--background-dark);
+    box-shadow: var(--shadow-medium);
 }
 
 /* Catalog Styles */
@@ -141,20 +141,20 @@ body{
 
 .card-link:hover{
     border: 1px solid var(--intermediate);
-    box-shadow: var(--shadow-big);
+    box-shadow: var(--shadow-medium);
 }
 
 .card{
     background:var(--intermediate);
     border-radius: var(--card-border-radius);
     gap:var(--margin-small);
-    padding:var(--padding-big);
+    padding:var(--padding-small);
     width:100%;
     height:100%;
 }
 .card-img-container{  
-    height:100%;
-    width:auto;
+    height:auto;
+    width:100%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -162,10 +162,6 @@ body{
 
 .card-content{
     width:100%;
-    display:flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: flex-start;
     gap:var(--padding-small);
 }
 
@@ -176,14 +172,15 @@ body{
 }
 
 .card h2{
-    font-size:var(--font-small);
+    font-size:var(--font-medium);
     text-align: left;
-
+    padding-bottom:var(--padding-small);
 }
 
 .card p{
     font-size:var(--font-small);
     text-align: left;
+    padding-bottom:var(--padding-medium);
 }
 /* Catalog Styles */
 /* Article Styles */
@@ -193,9 +190,11 @@ body{
     display:flex;
     flex-direction: column;
     margin:3vw auto;
+    gap:var(--padding-medium);
     padding:var(--padding-big);
     background:var(--intermediate);
     border-radius: var(--card-border-radius);
+    text-align: center;
 }
 
 .article-img{
@@ -205,9 +204,9 @@ body{
     margin:1vw 0;
 }
 
-.btn{
+.btn-download, .btn-details{
     width:fit-content;
-    margin-top:var(--padding-small);
+    margin:var(--padding-small);
     padding:0.5vw 1vw;
     background:var(--highlight);
     color:var(--font-light);
@@ -217,14 +216,14 @@ body{
     cursor: pointer;
 }
 
-.btn:hover{
+.btn-download:hover, .btn-details:hover{
     border: 1px solid var(--hightlight);
-    box-shadow: 0 0 1vw var(--highlight);
+    box-shadow: var(--shadow-small);
 }
 
-.btn:active{
+.btn-download:active, .btn-details:active{
     border: 1px solid var(--highlight);
-    box-shadow: var(--shadow-small);
+    box-shadow: var(--shadow-medium);
 }
 /* Article Styles */
 /* main-menu */
@@ -288,8 +287,10 @@ body{
     .card{
     font-size:var(--font-small);
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:var(--padding-big);
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 2fr 3fr;
+    gap:var(--padding-medium);
     width:100%;
     }
 
@@ -303,19 +304,6 @@ body{
     }
     
     :root{
-    --background-dark:#1e1e1e;
-    --background-light:#e2e2e2;
-    --intermediate:#333333;
-    --font-dark:#1e1e1e;
-    --font-light:#e2e2e2;
-    --highlight:orangered;
-    --circle-size:20vw;
-    --font-big:2rem;
-    --font-medium:1.5rem;
-    --padding-big:3vw;
-    --padding-medium:2vw;
-    --padding-small:0.5vw;
-    --nav-btn-size:6vw;
     --shadow-small:0 0 10px var(--highlight);
     --shadow-medium:0 0 20px var(--highlight);
     --shadow-big:0 0 30px var(--highlight);
@@ -325,7 +313,6 @@ body{
     --article-size:60vw;
     --sphere-size:20vw;
     --title-offset:15vw;
-    --font-size:16px;
     }   
     #main-head{
     font-size:var(--font-big);
