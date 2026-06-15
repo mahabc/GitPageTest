@@ -7,15 +7,15 @@
     --font-light:#e2e2e2;
     --highlight:orangered;
     --circle-size:60vw;
-    --font-big:2rem;
-    --font-medium-big:1.5rem;
-    --font-medium:1rem;
-    --font-small:0.8rem;
+    --font-big:4rem;
+    --font-medium-big:3rem;
+    --font-medium:1.5rem;
+    --font-small:1.5rem;
     --padding-big:7vw;
     --padding-medium:3vw;
-    --padding-small:1vw;
+    --padding-small:1.5vw;
     --margin-small:1vw;
-    --nav-btn-size:6vw;
+    --nav-btn-size:10vw;
     --shadow-small:0 0 30px var(--highlight);
     --shadow-medium:0 0 40px var(--highlight);
     --shadow-big:0 0 50px var(--highlight);
@@ -85,11 +85,12 @@ body{
     justify-content: center;
     align-items: center;
     width:100%;
+    gap:var(--padding-big);
 }
 
 #main-nav a{
     padding:var(--padding-small);
-    margin:var(--padding-small);
+    margin-top:var(--padding-big);
     color:var(--font-light);
     border:1px solid var(--intermediate);
     border-radius: 50%;
@@ -126,7 +127,7 @@ body{
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    gap:var(--margin-small);
+    gap:var(--padding-big);
     padding:var(--padding-big);
 }
 
@@ -145,16 +146,20 @@ body{
 }
 
 .card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background:var(--intermediate);
     border-radius: var(--card-border-radius);
-    gap:var(--margin-small);
-    padding:var(--padding-small);
+    gap:var(--margin-big);
+    padding:var(--padding-big);
     width:100%;
     height:100%;
 }
 .card-img-container{  
     height:auto;
-    width:100%;
+    width:80%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -181,6 +186,7 @@ body{
     font-size:var(--font-small);
     text-align: left;
     padding-bottom:var(--padding-medium);
+    margin-bottom:var(--padding-medium);
 }
 /* Catalog Styles */
 /* Article Styles */
@@ -189,12 +195,13 @@ body{
     width:var(--article-size);
     display:flex;
     flex-direction: column;
-    margin:3vw auto;
+    margin:var(--padding-big) auto;
     gap:var(--padding-medium);
     padding:var(--padding-big);
     background:var(--intermediate);
     border-radius: var(--card-border-radius);
     text-align: center;
+    font-size:var(--font-medium);
 }
 
 .article-img{
@@ -206,8 +213,8 @@ body{
 
 .btn-download, .btn-details{
     width:fit-content;
-    margin:var(--padding-small);
-    padding:0.5vw 1vw;
+    margin-top:var(--padding-big);
+    padding:var(--padding-small);
     background:var(--highlight);
     color:var(--font-light);
     font-size:var(--font-small);
@@ -313,7 +320,15 @@ body{
     --article-size:60vw;
     --sphere-size:20vw;
     --title-offset:15vw;
+    --font-big:2rem;
+    --font-medium-big:1.5rem;
+    --font-medium:1rem;
+    --font-small:0.8rem;
+    --padding-big:3vw;
+    --padding-medium:2vw;
+    --padding-small:1vw;
     }   
+    
     #main-head{
     font-size:var(--font-big);
     position:absolute;
