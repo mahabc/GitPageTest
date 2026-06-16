@@ -288,7 +288,7 @@ main{
 /* main-menu */
 /* footer */
 footer{
-    background:var(--background-dark);
+    background:#000000ff;
     color:var(--font-light);
     padding:2rem;
     text-align:center;
