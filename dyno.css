@@ -280,6 +280,18 @@ body{
 }
 
 /* main-menu */
+/* footer */
+footer{
+    background:var(--background-dark);
+    color:var(--font-light);
+    padding:2rem;
+    text-align:center;
+}
+
+footer a{
+    color:var(--font-light);
+}
+/* footer */
 /* media */
 
 @media screen and (min-width: 1024px) {
