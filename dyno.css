@@ -289,7 +289,7 @@ main{
 /* main-menu */
 /* footer */
 footer{
-    background:#000000ff;
+    background:#00000000;
     color:var(--font-light);
     padding:2rem;
     text-align:center;
