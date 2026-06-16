@@ -326,7 +326,7 @@ footer a{
     --shadow-small:0 0 10px var(--highlight);
     --shadow-medium:0 0 20px var(--highlight);
     --shadow-big:0 0 30px var(--highlight);
-    --card-height:28vw;
+    --card-height:20vw;
     --card-width:45vw;
     --card-border-radius:2vw;
     --article-size:60vw;
