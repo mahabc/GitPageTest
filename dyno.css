@@ -394,6 +394,15 @@ footer a{
     position:absolute;
     top:10%;
     }
+
+    .btn-download,
+    .btn-details{
+        max-width:100%;
+        width:auto;
+        padding:0.5rem 1rem;
+        white-space:normal;
+        overflow-wrap:break-word;
+    }
 }
 /* media */
 /* lightbox */
