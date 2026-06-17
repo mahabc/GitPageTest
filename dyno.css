@@ -6,16 +6,16 @@
     --font-dark:#1e1e1e;
     --font-light:#e2e2e2;
     --highlight:orangered;
-    --circle-size:60vw;
-    --font-big:4rem;
+    --circle-size:50vw;
+    --font-big: clamp(1.5rem, 2vw, 3rem);
+    --font-medium: clamp(1rem, 1.2vw, 1.5rem);
     --font-medium-big:3rem;
-    --font-medium:1.5rem;
-    --font-small:1.5rem;
+    --font-small:1.2rem;
     --padding-big:7vw;
     --padding-medium:3vw;
     --padding-small:1.5vw;
     --margin-small:1vw;
-    --nav-btn-size:10vw;
+    --nav-btn-size:20vw;
     --shadow-small:0 0 30px var(--highlight);
     --shadow-medium:0 0 40px var(--highlight);
     --shadow-big:0 0 50px var(--highlight);
@@ -87,7 +87,11 @@ main{
     border-radius: 10%;
 }*/
 
-#main-nav{
+#big-nav{
+    display:none; 
+}
+
+#small-nav{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -95,11 +99,11 @@ main{
     gap:var(--padding-big);
 }
 
-#main-nav a{
-    padding:var(--padding-small);
+#small-nav a{
+    padding:var(--padding-big);
     margin-top:var(--padding-big);
     color:var(--font-light);
-    border:1px solid var(--intermediate);
+    border:1px solid var(--background-dark);
     border-radius: 50%;
     text-align: center;
     width: var(--nav-btn-size);
@@ -113,16 +117,16 @@ main{
 #back span{
     position:relative;
     top:-0.5vw;
-    font-size:var(--font-big);  
+    font-size:var(--font-medium);  
 }
 
 #home span{
     position:relative;
     top:-0.5vw;
-    font-size:var(--font-big);  
+    font-size:var(--font-medium);  
 }
 
-#main-nav a:hover{
+#small-nav a:hover{
     border: 1px solid var(--background-dark);
     box-shadow: var(--shadow-medium);
 }
@@ -185,15 +189,13 @@ main{
 
 .card h2{
     font-size:var(--font-medium);
-    text-align: left;
     padding-bottom:var(--padding-small);
 }
 
 .card p{
     font-size:var(--font-small);
-    text-align: left;
-    padding-bottom:var(--padding-medium);
-    margin-bottom:var(--padding-medium);
+    padding-bottom:var(--padding-small);
+    margin-bottom:var(--padding-small);
 }
 /* Catalog Styles */
 /* Article Styles */
@@ -218,16 +220,23 @@ main{
     margin:1vw 0;
 }
 
-.btn-download, .btn-details{
+.btn-download,
+.btn-details{
+    display:inline-block;
     width:fit-content;
-    margin-top:var(--padding-big);
-    padding:var(--padding-small);
+
+    padding:var(--padding-small) var(--padding-big);
+    margin:var(--padding-small) auto;
+
     background:var(--highlight);
     color:var(--font-light);
+
     font-size:var(--font-small);
-    border:none;
-    border-radius: 5vw;
-    cursor: pointer;
+
+    border:1px solid transparent;
+    border-radius:999px;
+
+    cursor:pointer;
 }
 
 .btn-download:hover, .btn-details:hover{
@@ -248,12 +257,16 @@ main{
     align-items: center;
     flex-direction: column;
     width:80%;
-    margin:0 auto;
+    margin:15vw auto;
     gap:var(--padding-medium);
     padding:var(--padding-small);
 }
 
-
+#main-head{
+    font-size:var(--font-medium);
+    position:absolute;
+    top:5vw;
+    }
 
 .sphere{
     width: var(--sphere-size);
@@ -271,7 +284,7 @@ main{
 }
 
 .sphere p{
-    font-size:var(--font-big);
+    font-size:var(--font-medium);
     text-align: center;
 }
 
@@ -303,7 +316,34 @@ footer a{
 
 @media screen and (min-width: 1024px) {
     
-    
+    #big-nav{
+    display:block;
+    display:flex;
+    justify-content: center;
+    gap:1vw;
+    padding:var(--padding-small);
+    border-bottom:1px solid var(--highlight);
+}
+
+    #big-nav a{
+    color:var(--font-light);
+    font-size:var(--font-medium);
+    height:100%;
+    padding:var(--padding-medium);
+    width:10vw;
+    text-align: center;
+    border-radius:var(--nav-border-radius);
+    border:1px solid var(--background-dark);
+    font-weight:bold;
+}
+
+    #big-nav a:hover{
+    box-shadow:var(--shadow-medium);
+}
+
+    #small-nav{
+        display:none;
+    }
 
     .catalog{
     grid-template-columns: repeat(2, 1fr);
@@ -346,6 +386,7 @@ footer a{
     --padding-big:3vw;
     --padding-medium:2vw;
     --padding-small:1vw;
+    --nav-border-radius:1vw;
     }   
     
     #main-head{
