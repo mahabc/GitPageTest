@@ -362,6 +362,7 @@ footer a{
 
     .main-menu{
     flex-direction: row;
+    margin:0 auto;
     }
 
     .card-link{
@@ -392,7 +393,7 @@ footer a{
     #main-head{
     font-size:var(--font-big);
     position:absolute;
-    top:10%;
+    margin:5vw auto;
     }
 
     .btn-download,
