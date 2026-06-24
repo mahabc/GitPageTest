@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tap Hosting Pipe Size</title>
+  <link rel="icon" href="./favicon.png">
+  <link rel="stylesheet" href="./dyno.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+  <main>
+    <article class="workflows-article" id="article4">
+        <h2>Tap Hosting Pipe Size</h2>
+        <img
+            src="./resources/olet0.png"
+            alt="Dynamo Workflows"
+            class="article-img"
+        >
+        <p>When generating Revit tables for fittings, I am often asked to show the size of the pipe that hosts a Tap Pipe Fitting elements. In order to do that we need to identify which fitting is a Tap and does not include all connector sizes, which pipes is it connected to and finally what is their size.</p>
+        <img
+            src="./resources/olet1.png"
+            alt="Dynamo Workflows"
+            class="article-img"
+        >
+        <p> Above we see 3 pipes of different sizes attached to a collector using a Tap Pipe Fitting. Lets look at the Dynamo script and fillout the PIP_OletHostSize parameter.</p>
+        <img
+            src="./resources/oletAlgorythm.png"
+            alt="Dynamo Workflows"
+            class="article-img"
+        >
+        <p>First we need to filter out all the Tap pipe fittings. I achieve that using Type Parameter called Element_Type_Function with a value of "Tap" applied to each Tap Family Type</p>
+        <img
+            src="./resources/olet2.png"
+            alt="Dynamo Workflows"
+            class="article-img"
+        >
+        <p>We also need to determine where are we going to write the size value. For that I chose a shared parameter called "PIP_OletHostSize"</p>
+        <img
+            src="./resources/olet3.png"
+            alt="Dynamo Workflows"
+            class="article-img"
+        >
+        <p>The script collects all Pipe Fittings whose Element_Type_Function parameter has value of "Tap". It then goes through each one of them, checks the sizes of its connectors,compares them to each other and chooses the largest one to be added to a list. It then spits out all elements with a pair of connectors and a list of their largest connectors. For each Tap there is one Connector Size. It then takes that size and writes it to the PIP_OletHostSize parameter. You can now add that parameter to your Revit Schedule and read the sizes of all Tap connectors.</p>
+        <img
+            src="./resources/olet4.png"
+            alt="Dynamo Workflows"
+            class="article-img"
+        >
+        <p>Hopefully this script will help you save a bit of time and effort. If you have any questions or feedback, feel free to reach out. You can download the script by clicking the button below or by pulling it from my GitHub repository.</p>
+        <a href="./resources/tapHostPipeSize.zip" class="btn-download" download>Download Solution</a>
+      </article>
+  </main>
+
+  <div id="lightbox">
+        <span id="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+  </div>
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6b072bca14b543a98830c12a4a739230"}'></script>
+  <div id="footer-placeholder"></div>
+  <script src="./footer.js" defer></script>
+  <script src="./header.js" defer></script>
+</body>
+    
+</html>

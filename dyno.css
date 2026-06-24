@@ -461,6 +461,10 @@ footer a{
     margin:0 auto;
     }
 
+    .sphere p{
+    font-size:var(--font-big);
+    }
+
     .card-link{
         max-width:var(--card-width);
         min-height:var(--card-height);

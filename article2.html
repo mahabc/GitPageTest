@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dynamo Workflows</title>
+  <title>Mark Embedded</title>
+  <link rel="icon" href="./favicon.png">
   <link rel="stylesheet" href="./dyno.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="script.js" defer></script>
@@ -10,14 +11,32 @@
 <body>
   <div id="header-placeholder"></div>
   <main>
-    <article class="workflows-article" id="article1">
+    <article class="workflows-article" id="article2">
         <h1>Excel Table Painter</h1>
+        <img
+            src="./resources/Mark Embedded IMG.png"
+            alt="Mark Embedded Pipes"
+            class="article-img"
+        >
+        <p>This script requires a checkbox shared parameter. For this example I will be using PIP_isEmbedded.</p>
+        <img
+            src="./resources/embedded1.png"
+            alt="Mark Embedded Pipes"
+            class="article-img"
+        >
+        <p>The script figures out which Pipes and Pipe Fittings to mark by reading the slope value so make sure all the slopes are applied correctly to the corresponding pipes.</p>
+        <img
+            src="./resources/embedded2.png"
+            alt="Mark Embedded Pipes"
+            class="article-img"
+        >
+        <p>The script first resets the values of selected parameters to 0. It then checks for intersection of (#Pipes) and (#Pipe Fittings) with (#Floors) - both local and link. If (#Floor) elements come from a linked file, the "Revit Link Name" input box has to be filled out correctly. The script then separates the vertical pipes (using "Slope Drop Off" value as a separator) and sets their embedded value to 0. The remaining pipes that are considered horizontal and intersecting with floors are set to 1. </p>
         <img
             src="./resources/PlayerMarkEmbedded_2026-06-01_03-57-39.png"
             alt="Mark Embedded Pipes"
             class="article-img"
         >
-        <p>Dynamo Workflows is a powerful tool that allows you to automate and orchestrate complex processes with ease. With its intuitive interface and robust features, you can create, manage, and monitor workflows that streamline your operations and improve efficiency.</p>
+        <p>Hopefully this script will help you save a bit of time and effort. If you have any questions or feedback, feel free to reach out. You can download the script by clicking the button below or by pulling it from my GitHub repository.</p>
         <a href="./resources/PlayerMarkEmbedded.zip" class="btn-download" download>Download Solution</a>
     </article>
   </main>
